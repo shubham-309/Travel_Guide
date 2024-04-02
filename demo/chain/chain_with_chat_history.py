@@ -1,7 +1,6 @@
 import os
 from langchain.chains import ConversationalRetrievalChain, RetrievalQAWithSourcesChain
-from langchain.chat_models import ChatOpenAI
-
+from langchain_google_genai import ChatGoogleGenerativeAI
 from chain.prompts import (
     prompt_stuff,
     prompt_refine,
@@ -30,8 +29,8 @@ class ChainWithChatHistory:
     def create_retrievar(self, datastore_name, show_sources, temperature, chain_type):
         retriever = get_retriever(datastore_name)
 
-        llm = ChatOpenAI(
-            model_name="gpt-3.5-turbo",
+        llm = ChatGoogleGenerativeAI(
+            model="gemini-pro",
             temperature=temperature,
             verbose=True,
             callbacks=[CustomOpenAICallback()],

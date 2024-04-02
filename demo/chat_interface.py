@@ -7,7 +7,8 @@ import time
 from dotenv import load_dotenv
 
 load_dotenv()
- 
+st.set_page_config("TravelMentor: Your Personalized Journey Planner",page_icon="/home/shubham.pandey/personal/Tourism/langchain-demo/image.jpeg", layout="wide")
+
 session = Session()
 
 if "chain_session" not in st.session_state:
@@ -74,7 +75,7 @@ with st.sidebar:
     st.write("version 1.1.2")
 
 
-st.header("Legal Query Bot")
+st.header("TravelMentor: Your Personalized Journey Planner")
 with st.form(key="QA", clear_on_submit=True):
     prompt = st.text_input(
         "Question",
