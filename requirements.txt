@@ -11,3 +11,4 @@ colored==2.2.4
 ipython
 langchain-google-genai
 langchain-experimental
+pillow
