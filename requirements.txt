@@ -1,0 +1,13 @@
+langchain==0.1.9
+langchain-community==0.0.24
+langchain-core==0.1.28
+langchain-openai==0.0.8
+pinecone-client==3.2.1
+streamlit==1.31.0
+streamlit-chat==0.1.1
+streamlit-modal==0.1.2
+python-dotenv==1.0.0
+colored==2.2.4
+ipython
+langchain-google-genai
+langchain-experimental
